@@ -9,11 +9,17 @@ func doNothing() {
     //
 }
 
+// invoke the function:
+doNothing() // nothing happened!
+
 // Functions in Swift take parameters and those parameters have a type:
 
 func takesParam(name: String) {
     //
 }
+
+// Invoke the function. Parameters have names that appear with the value
+takesParam(name: "Sour") // name: "value"
 
 // Functions in Swift return values and the return value has a type. Notice the return
 // type is preceded by: ->

@@ -11,7 +11,34 @@ height = 8
 
 // Define a new variable width with a value of 12:
 
-// Assign a new value:
+// Assign a new value to width:
+
+
+// Define a new variable area. Set the value to
+// height * width
+
+
+// Important! operators like * must see two
+// values of the same type!
+
+
+// Define a new variable: perSqFt and set the value
+// to 5.99.
+
+
+// Check the type it should be Double. Int is a
+// whole number. Doubles are decimal numbers.
+// This could cause problems. For example:
+// area * perSqFt would throw an error:
+// Binary operator '*' cannot be applied to operands of type 'Int' and 'Double'
+// You can convert area to a Double with `Double(area)`
+
+
+
+
+
+
+
 
 
 // Some variables are never reassigned they hold
@@ -21,14 +48,16 @@ let pi = 3.14
 // Uncomment the line below and test to see an error
 // pi = 6.28
 
+
 // Define a variable for your name and shoesize below.
-// Since these are unlikely to change use `let`:
+// Since this is unlikely to change use `let`:
 
 
 // Challenge:
 // Consider each of the following situations and ask
 // yourself whether it is best to use a var (mutable
 // variable) or let (constant variable)...
+
 
 // Storing information about the number of cars parked in
 // a parking lot daily.
@@ -50,18 +79,18 @@ let pi = 3.14
 //   user has taken today
 // Goal number of steps: The user's goal for number of
 //   steps to take each day
-//Average heart rate: The user's average heart rate over
+// Average heart rate: The user's average heart rate over
 //   the last 24 hours
 
-// Define variable for each use var for values that will
-//   change and let for values that willl not change:
-
-
-
-
+// Define variable for each. Use var for values that will
+//   change and let for values that will not change:
 
 // Add a comment to each line with an explanation of
 //   why chose let or var
+
+
+
+
 
 
 
@@ -88,13 +117,17 @@ let pi = 3.14
 // decimal or floating point number.
 
 
-// Implicet types
+
+// Implicit types
 // Notice you haven't set the type all your variables.
 // Only some. When assigning a value Swift guess at the
 // type from the value you assign.
 
 // Consider this problem: You need to find the area of a
-// circle then divide it into slices:
+// circle then divide it into slices (imagine you're making
+// an app that sells pizza by the square inch!):
+
+
 
 // Consider the following, notice the error.
 // Binary operator '*' cannot be applied to operands of type 'int' and 'Double'

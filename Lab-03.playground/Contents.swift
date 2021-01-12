@@ -191,8 +191,11 @@ greet(user: "Frango", withPrefix: "Mr.")
 
 // 3. Write a function that orders a pizza. It should take type of
 //    pie as a string, the size of the pie inches as an int, the
-//    number of toppings as an Int, and return cost of the pie as a double.
+//    number of toppings as an Int, and a tuple that includes the
+//    type and cost.
 //    Calculate the cost as the area times 0.05 + 0.03 * number of toppings
+
+
 
 
 

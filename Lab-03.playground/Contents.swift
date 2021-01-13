@@ -177,23 +177,22 @@ greet(user: "Frango", withPrefix: "Mr.")
 // 1. Imagine you are making an app to help contractors calculate area.
 //    This would help them estimate cost for materials and time. Your
 //    first function will calculate the area of a square. Your function
-//    should accept two Int values: height and width, and return area as
-//    an Int. Remember, area is calculated as height multiplied by width.
+//    should accept two Int values: length and width, and a cost per
+//    square foot a Double. It should calculate the area and multiply by
+//    the cost and return the answer as a Double. For example imagine
+//    length of 48 and a width of 96 and a cost of 0.33 per square foot.
+//    The function should return: 4 * 8 * 0.10 = 10.56
 
 
 
-// 2. Now that you have area you might also need to know the perimeter.
-//    Contractors would use this to calculate how much molding or framing
-//    material might be needed. Remember, perimeter is calculated as the
-//    sum of all sides. Takes 4 parameters all int and returns an int.
-
-
-
-// 3. Write a function that orders a pizza. It should take type of
-//    pie as a string, the size of the pie inches as an int, the
-//    number of toppings as an Int, and a tuple that includes the
-//    type and cost.
+// 3. Write a function that orders a pizza. It should take the type of
+//    pie as a string (cheese, pepperoni, etc.), the size of the pie
+//    inches in inches as an int, the number of toppings as an Int,
+//    and return a tuple that includes the type with the size for example:
+//    "cheese 10"" as string, and the cost as a Double.
 //    Calculate the cost as the area times 0.05 + 0.03 * number of toppings
+//    For example a 5" radius pie with 3 toppings:
+//    5 * 5 * 3.14 * (0.05 + 0.03 * 3) = 10.99
 
 
 

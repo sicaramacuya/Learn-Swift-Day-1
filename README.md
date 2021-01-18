@@ -1,5 +1,6 @@
 # Learn-Swift-Day-1
 
+Download the Playgrounds in this repo and learn the Swift prgoramming language. You can dive into the challenges in the playgrounds or follow videos below to walk through the concepts.
 
 Video Lessons: 
 

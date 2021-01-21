@@ -2,7 +2,7 @@
 
 Download the Playgrounds in this repo and learn the Swift prgoramming language. You can dive into the challenges in the playgrounds or follow videos below to walk through the concepts.
 
-Video Lessons: 
+## Video Lessons: 
 
 - https://youtu.be/OD4Waw9b4NM
 - https://youtu.be/yu0HzQf_YXc
@@ -14,3 +14,9 @@ Video Lessons:
 - https://youtu.be/hNjpcdMRSn0
 - https://youtu.be/sbv0kn5Upjg
 - https://youtu.be/UK4h4motD08
+
+## Rubric
+
+|            Not Passing       | Passing |   Stretch   |
+|:----------------------------:|:-------------:|:------------:|
+| Less than 90% of problems not completed | 90%+ challenges completed | 100% challenges completed |

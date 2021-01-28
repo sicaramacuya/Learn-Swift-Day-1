@@ -35,21 +35,19 @@ qruple   // (Int, Int, Int, Int)
 // Define the following tuples:
 
 // 1. Login holds name and password both type String
-
+let login: (name: String, password: String)
 
 
 // 2. Vector holds two nunmbers: 1.56, 3.45
-
+let vector: (Double, Double) = (1.56, 3.45)
 
 
 // 3. Profile holds name, age, shoesize
-
+let profile: (name: String, age: Int, shoeSize: Double) = ("Portepuente", 45, 12.5)
 
 
 // 3. Address holds street address, city, state, and zip code
-
-
-
+let address: (streetAdress: String, city: String, state: String, zipCode: Int)
 
 
 
@@ -64,9 +62,9 @@ let coords: (Double, Double) = (37.754871, -122.498789)
 // practice to also add the type to prevent mistakes.
 // Explicitly type each of the variables below:
 
-let name = ("Frango", "Martini")
-let pizza = ("Peperoni", "Large", 21.99)
-let damage = ("heat", 120000)
+let name: (String, String) = ("Frango", "Martini")
+let pizza: (String, String, Double) = ("Peperoni", "Large", 21.99)
+let damage: (String, Int) = ("heat", 120000)
 
 
 
@@ -79,8 +77,9 @@ print(name.1) // Martini
 
 // Challenge:
 // Print all of the values from the pizza and damage
-
-
+print(pizza.0)
+print(pizza.1)
+print(pizza.2)
 
 // Tuples are great but it can sometimes be confusing to identify
 // the values they contain. Tuples in Swift can also have named
@@ -99,19 +98,26 @@ print(track.time) // 1.57
 // each value. Also assign a valid value for each variable.
 
 // 1. location: latitude: 37.754871, longitude: -122.498789
-
+let location: (latitude: Double, longitude: Double) = (37.754871, -122.498789)
 
 
 // 2. doughnut: type: cake, flavor: chocolate, has sprinkles: false
-
+let doughnut: (type: String, flavor: String, sprinkles: Bool) = ("cake", "chocolate", false)
 
 
 // 3. shoe: model: Skate, color: red, size: 9.5
-
+let shoe: (model: String, color: String, size: Double) = ("Skate", "red", 9.5)
 
 
 // Challenge:
 // Print each value from the three tuples you defined above:
+print(location.latitude)
+print(location.longitude)
 
+print(doughnut.type)
+print(doughnut.flavor)
+print(doughnut.sprinkles)
 
-
+print(shoe.model)
+print(shoe.color)
+print(shoe.size)

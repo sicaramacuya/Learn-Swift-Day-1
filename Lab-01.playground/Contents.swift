@@ -2,7 +2,7 @@ import UIKit
 
 // Variables associate a name to a value.
 // Use the word `var` to to define a new variable
-var height = 6
+var height: Double = 6
 
 // Later you can reassign to a variable like this:
 height  = 10
@@ -10,13 +10,13 @@ height  = 10
 height = 8
 
 // Define a new variable width with a value of 12:
-
+var width: Double = 12
 // Assign a new value to width:
-
+width = 15
 
 // Define a new variable area. Set the value to
 // height * width
-
+var area: Double = height * width
 
 // Important! operators like * must see two
 // values of the same type!
@@ -24,7 +24,7 @@ height = 8
 
 // Define a new variable: perSqFt and set the value
 // to 5.99.
-
+var perSqFt: Double = 5.99
 
 // Check the type it should be Double. Int is a
 // whole number. Doubles are decimal numbers.
@@ -51,21 +51,23 @@ let pi = 3.14
 
 // Define a variable for your name and shoesize below.
 // Since this is unlikely to change use `let`:
-
+var name: String = "Eric"
+let shoeSize: Double = 9
 
 // Challenge:
 // Consider each of the following situations and ask
 // yourself whether it is best to use a var (mutable
 // variable) or let (constant variable)...
+    // Storing information about the number of cars parked in a parking lot daily.
+    // Storing the number of units in an apartment complex.
+    // Storing your highscore in a game.
+    // Storing the number of letters in an alphabet.
 
 
-// Storing information about the number of cars parked in
-// a parking lot daily.
-// Storing the number of units in an apartment complex.
-// Storing your highscore in a game.
-// Storing the number of letters in an alphabet.
-
-
+var carsParkInParkingLot: Int
+let numberUnitsApartmentComplex: Int
+var highestScore: Int
+let letterInAlphabet: Int
 
 
 // Challenge:
@@ -84,14 +86,15 @@ let pi = 3.14
 
 // Define variable for each. Use var for values that will
 //   change and let for values that will not change:
-
 // Add a comment to each line with an explanation of
 //   why chose let or var
 
 
-
-
-
+let username: String                        // The variable 'name' is an unmutable variable because after setting your name on the application it can be changed.
+var age: Int                            // The variable 'age' is a mutable variable because the age is going to keep increasing over the years.
+var currentForNumberStepToday: Int      // The variable 'currentForNumberStepToday' is a mutable variable because the after every step the total value will keep changing.
+var goalForNumberStepToday: Int         // The variable 'goalForNumberStepToday' is a mutable variable because it is possible the user wants to change their daily goal.
+var dailyAverageHeartRate: Float        // The variable 'dailyAverageHeartRate' is a mutable variable because afther each day the average heart rate is going to be calculated.
 
 
 // Types and Type safety
@@ -102,7 +105,7 @@ let pi = 3.14
 
 // Uncomment the line below Notice the error that shows:
 
-// height = 9.77
+ height = 9.77
 
 // Swift assigns a type to each variable and you are not
 // allowed to change the type later. Earlier height was
@@ -133,45 +136,36 @@ let pi = 3.14
 // Binary operator '*' cannot be applied to operands of type 'int' and 'Double'
 // Radius is an int and pi is a double. Fix it by making radius type double.
 
-//let slices = 8
-//let radius = 10
-//let area = radius * radius * pi // error
+let slices: Double = 8
+let radius: Double = 10
+let area1 = radius * radius * pi // error
 
 // That worked but Slices should be a whole number. What happens now, Error:
 // Binary operator '/' connot be applied to operands of type 'Double' and 'Int'
 // In this case you can cast a value as another type like this: Double(8)
 // Try it here:
 
-//let sliceArea = area / slices
+let sliceArea = area / Double(slices)
 
-//print(area) // 314.0
-//print(sliceArea) // 39.25
+print(area) // 314.0
+print(sliceArea) // 39.25
 
 
 // Challenges:
 // 1. Your app needs to accept a username and hold it in a variable. What type is
 //   best for this variable?
-
+var username1: String
 // 2. Your app needs to accept a password. What type should this be?
-
+var password: String
 // 3. Your app needs to accept a variable that holds a user's shoe size. What type
 //   is it?
-
+var userShoeSize: Double
 // 4. Your app has a UIPicker that allows a visitor to choose their gender. The
 //   choices are M, F, O(ther), N(ot specified). What type should these be?
-
+var userGender: Character
 // 5. Your app asks whether an applicant is older than 18. This is a check box or a
 //   switch, what type is best here?
-
+var isUserOlderThan18: Bool
 // 6. Your app asks how many people are in your party. (Imagine a reservation form)
 //   What type is this?
-
-
-
-
-
-
-
-
-
-
+var amountPeopleInParty: Int
